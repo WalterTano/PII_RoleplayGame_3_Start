@@ -6,6 +6,8 @@ namespace RoleplayGame
         public DarkArcher(string name) : base(name)
         {
             this.AddItem(new Bow());
+            this.AddItem(new Bow());
+            this.AddItem(new Bow());
             this.VP = 1;
         }
     }
