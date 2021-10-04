@@ -177,6 +177,8 @@ namespace Test.Library
             Assert.AreNotEqual(notExpected, knight.Health);
 
             knight.AddVP(3); // knight.VP = 4
+            darkArcher.Cure();
+            enemies.Add(darkArcher);
             encounter = new Encounter(heroes, enemies);
             encounter.DoEncounter(); // knight.VP = 0;
             int expected = 100;
