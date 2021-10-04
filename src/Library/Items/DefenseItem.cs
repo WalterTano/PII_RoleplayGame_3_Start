@@ -2,8 +2,10 @@ namespace RoleplayGame
 {
     public abstract class DefenseItem : Item
     {
-        public new int AttackValue {
-            get {
+        public override int AttackValue
+        {
+            get
+            {
                 return 0;
             }
         }
