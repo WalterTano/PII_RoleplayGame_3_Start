@@ -2,8 +2,8 @@ namespace RoleplayGame
 {
     public abstract class Item
     {
-        public int AttackValue{ get; }
+        public abstract int AttackValue { get; }
 
-        public int DefenseValue{ get; }
+        public abstract int DefenseValue { get; }
     }
 }

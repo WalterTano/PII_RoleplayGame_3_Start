@@ -4,10 +4,11 @@ namespace RoleplayGame
 {
     public abstract class Character
     {
-        protected int health;
+        protected int health = 100;
         protected List<Item> items = new List<Item>();
 
-        public Character(string name){
+        public Character(string name)
+        {
             this.Name = name;
         }
 
@@ -48,8 +49,8 @@ namespace RoleplayGame
             }
         }
 
-        public int AttackValue 
-        { 
+        public int AttackValue
+        {
             get
             {
                 int value = 0;

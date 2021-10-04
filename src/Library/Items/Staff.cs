@@ -1,16 +1,16 @@
 namespace RoleplayGame
 {
-    public class Staff: IAttackItem, IDefenseItem
+    public class Staff : Item, IMagicalItem
     {
-        public int AttackValue 
+        public override int AttackValue
         {
             get
             {
                 return 100;
-            } 
+            }
         }
 
-        public int DefenseValue
+        public override int DefenseValue
         {
             get
             {

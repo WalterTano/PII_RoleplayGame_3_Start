@@ -1,20 +1,23 @@
-using System.Collections.Generic; 
+using System.Collections.Generic;
 
 namespace RoleplayGame
 {
-    public class MagicCharacter : Character
+    public class MagicEnemy : Enemy
     {
-        
+
         protected List<IMagicalItem> magicalItems = new List<IMagicalItem>();
 
-        public MagicCharacter(string name) : base(name){
+        public MagicEnemy(string name) : base(name)
+        {
 
         }
-        public void AddItem(IMagicalItem item){
+        public void AddItem(IMagicalItem item)
+        {
             this.magicalItems.Add(item);
         }
 
-        public void RemoveItem(IMagicalItem item){
+        public void RemoveItem(IMagicalItem item)
+        {
             this.magicalItems.Remove(item);
         }
 
